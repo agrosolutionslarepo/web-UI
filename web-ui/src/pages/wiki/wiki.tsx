@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Container, Grid, Typography, Box, List, Divider, ListItem, ListItemText, ListItemIcon } from '@mui/material';
+import { Container, Grid, Typography, Box, List, Divider, ListItem, ListItemText, ListItemIcon } from '@mui/material';
 import aplanadora from "../../assets/img/aplanadora.png";
 import siembra from "../../assets/img/siembra.png";
 import hierbas from "../../assets/img/hierbas.png";

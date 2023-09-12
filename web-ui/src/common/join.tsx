@@ -1,7 +1,5 @@
-import { AppBar, Box, Toolbar, Grid, Container, Button, Stack, Typography } from "@mui/material";
+import {  Box, Grid, Button, Typography } from "@mui/material";
 import React from "react";
-import logo from "../assets/img/logo.png";
-import fondo from "../assets/img/fondo_menu.png";
 
 //Menu de navegación
 export const Join: React.FC<{}> = () => {
