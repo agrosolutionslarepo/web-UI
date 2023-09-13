@@ -3,8 +3,12 @@ import { Route, Routes } from "react-router-dom";
 import { HomePage } from "./pages/home";
 import { LoginPage } from "./pages/user/login";
 import { RouterLayout } from "./common/RouterLayout";
-import { NosotrosPage } from "./pages/home/nosotros";
+import { AboutusPage } from "./pages/home/aboutus";
 import { WikiPage } from "./pages/wiki/wiki";
+import { SemillasPage } from "./pages/wiki/semillas";
+import { RegisterPage } from "./pages/user/register";
+import { ContactPage } from "./pages/contact";
+import { ProfilePage } from "./pages/user/profile";
 
 //Rutas de las paginas
 export const AppRouter: React.FC<{}> = () => {
@@ -13,8 +17,12 @@ export const AppRouter: React.FC<{}> = () => {
             <Route path="/" element={<RouterLayout />}>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/login" element={<LoginPage />} />
-                <Route path="/nosotros" element={<NosotrosPage />} />
+                <Route path="/nosotros" element={<AboutusPage />} />
                 <Route path="/wiki" element={<WikiPage />} />
+                <Route path="/semillas" element={<SemillasPage />} />
+                <Route path="/registro" element={<RegisterPage />} />
+                <Route path="/contacto" element={<ContactPage />} />
+                <Route path="/perfil" element={<ProfilePage />} />
             </Route>
         </Routes>
     );

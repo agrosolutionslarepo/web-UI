@@ -19,7 +19,7 @@ export const LoginPage: React.FC<{}> = () => {
 
                 <Grid item sx={{minWidth:'55%'}}>
                     <Paper sx={{
-                        padding: 2,
+                        padding: {lg:4, md:2, xs:1},
                         border: 1,
                         borderColor: '#A39D9D',
                         background: 'transparent',
@@ -70,16 +70,16 @@ export const LoginPage: React.FC<{}> = () => {
                             }} required />
 
                             <Grid container direction="row" justifyContent="space-between" alignItems="center">
-                                <Button type="submit" variant="contained" sx={{ color: 'white', width: { xs: '100%', lg: '30%', md: '30%' }, marginTop:{xs:'10px', lg:'0', md:'0'}  }}>Iniciar Sesión</Button>
+                                <Button type="submit" variant="contained" sx={{ color: 'white', width: { xs: '100%', lg: '30%', md: '30%' }, marginTop: 1, marginBottom:1  }}>Iniciar Sesión</Button>
                                 <Button variant="text" sx={{
-                                    textAlign: 'center', width: { xs: '100%', lg: '30%', md: '30%' }, marginTop:{xs:'10px', lg:'0', md:'0'},
+                                    textAlign: 'center', width: { xs: '100%', lg: '30%', md: '30%' },
                                     '&:hover': {
                                         background: 'none',
 
                                     }
                                 }}>¿Olvidaste tu Contraseña?</Button>
 
-                                <Button variant="outlined" sx={{ width: { xs: '100%', lg: '30%', md: '30%' }, marginTop:{xs:'10px', lg:'0', md:'0'} }}>
+                                <Button variant="outlined" sx={{ width: { xs: '100%', lg: '30%', md: '30%' }, marginTop: 1, marginBottom:1 }}>
                                     <ListItemIcon sx={{color:'black', minWidth: '40px'}}>
                                         <GoogleIcon sx={{color:'#61E94B'}}/>
                                     </ListItemIcon>Google</Button>

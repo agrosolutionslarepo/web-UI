@@ -24,10 +24,10 @@ export const Join: React.FC<{}> = () => {
                     </Typography>
                 </Grid>
                 <Grid item xs={10} lg={4} md={10} sx={{ textAlign: {xs:'left', lg:'center'} }}>
-                    <Button variant="contained" sx={{  opacity: '0.8', color: 'white', width: {xs:'100px', md:'150px',lg:'150px'} }}>
+                    <Button href="/registro" variant="contained" sx={{  opacity: '0.8', color: 'white', width: {xs:'100px', md:'150px',lg:'150px'} }}>
                         Unite
                     </Button>
-                    <Button variant="outlined" sx={{ ml:{xs:'20px', md:'20px', lg:'20px'}, opacity: '0.8', width: {xs:'100px', md:'150px',lg:'150px'} }}>
+                    <Button href="/contacto" variant="outlined" sx={{ ml:{xs:'20px', md:'20px', lg:'20px'}, opacity: '0.8', width: {xs:'100px', md:'150px',lg:'150px'} }}>
                         Contactanos
                     </Button>
                 </Grid>

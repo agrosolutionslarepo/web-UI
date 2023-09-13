@@ -10,6 +10,7 @@ import CollectionsBookmarkIcon from '@mui/icons-material/CollectionsBookmark';
 import AppRegistrationIcon from '@mui/icons-material/AppRegistration';
 import PeopleIcon from '@mui/icons-material/People';
 import ContactSupportIcon from '@mui/icons-material/ContactSupport';
+import LocalFloristIcon from '@mui/icons-material/LocalFlorist';
 
 //Menu de navegación
 export const NavBar: React.FC<{}> = () => {
@@ -49,13 +50,21 @@ export const NavBar: React.FC<{}> = () => {
                                     }
                                 }} variant="text">Nosotros</Button>
 
+                                <Button href="/semillas" sx={{
+                                    color: 'white',
+                                    '&:hover': {
+                                        background: "none",
+                                    }
+                                }} variant="text">Semillas</Button>
+
                                 <Button href="/wiki" sx={{
                                     color: 'white',
                                     '&:hover': {
                                         background: "none",
                                     }
                                 }} variant="text">Wiki</Button>
-                                <Button sx={{
+
+                                <Button href="/contacto" sx={{
                                     color: 'white',
                                     '&:hover': {
                                         background: "none",
@@ -73,7 +82,7 @@ export const NavBar: React.FC<{}> = () => {
                                         }
                                     }} variant="contained" href="/login">Ingresar</Button>
 
-                                    <Button sx={{
+                                    <Button href="/registro" sx={{
                                         color: 'white'
                                     }} variant="contained">Registrarse</Button>
                                 </Stack>
@@ -88,7 +97,7 @@ export const NavBar: React.FC<{}> = () => {
                             </Grid>
                             <Grid item>
                                 <Button sx={{
-                                    color: 'white', background: '#121212', 
+                                    color: 'white', background: '#121212',
                                     boxShadow: '0px 8px 10px -5px rgba(0,0,0,0.2), 0px 16px 24px 2px rgba(0,0,0,0.14), 0px 6px 30px 5px rgba(0,0,0,0.12)',
                                     backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15))'
                                 }} onClick={() => setOpenLogin(true)}><PersonIcon /></Button>
@@ -126,6 +135,14 @@ export const NavBar: React.FC<{}> = () => {
                                         </ListItemButton>
                                     </ListItem>
                                     <ListItem >
+                                        <ListItemButton href="/semillas">
+                                            <ListItemIcon>
+                                                <LocalFloristIcon />
+                                            </ListItemIcon>
+                                            <ListItemText primary="semillas" />
+                                        </ListItemButton>
+                                    </ListItem>
+                                    <ListItem >
                                         <ListItemButton href="/nosotros">
                                             <ListItemIcon>
                                                 <PeopleIcon />
@@ -134,7 +151,7 @@ export const NavBar: React.FC<{}> = () => {
                                         </ListItemButton>
                                     </ListItem>
                                     <ListItem >
-                                        <ListItemButton>
+                                        <ListItemButton href="/contacto">
                                             <ListItemIcon>
                                                 <ContactSupportIcon />
                                             </ListItemIcon>
@@ -166,7 +183,7 @@ export const NavBar: React.FC<{}> = () => {
                                         </ListItemButton>
                                     </ListItem>
                                     <ListItem >
-                                        <ListItemButton>
+                                        <ListItemButton href="/registro">
                                             <ListItemIcon>
                                                 <AppRegistrationIcon />
                                             </ListItemIcon>

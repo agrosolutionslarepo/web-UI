@@ -8,7 +8,7 @@ import tom from "../../assets/img/tom.png";
 import fran from "../../assets/img/fran.png";
 import { Join } from "../../common/join";
 
-export const NosotrosPage: React.FC<{}> = () => {
+export const AboutusPage: React.FC<{}> = () => {
     return (
         <Container sx={{ mt: '60px', pl: 0, ml: 0, pr: 0, mr: 0 }} disableGutters maxWidth={false}>
 
