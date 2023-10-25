@@ -7,7 +7,7 @@ import soja from "../../assets/img/soja.png";
 import maiz from "../../assets/img/maiz.png";
 import { Join } from "../../common/join";
 
-export const SemillasPage: React.FC<{}> = () => {
+export const SeedsPage: React.FC<{}> = () => {
     return (
         <Container sx={{ mt: '60px', pl: 0, ml: 0, pr: 0, mr: 0 }} disableGutters maxWidth={false}>
 

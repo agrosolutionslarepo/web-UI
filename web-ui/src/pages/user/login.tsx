@@ -71,7 +71,7 @@ export const LoginPage: React.FC<{}> = () => {
 
                             <Grid container direction="row" justifyContent="space-between" alignItems="center">
                                 <Button type="submit" variant="contained" sx={{ color: 'white', width: { xs: '100%', lg: '30%', md: '30%' }, marginTop: 1, marginBottom:1  }}>Iniciar Sesión</Button>
-                                <Button variant="text" sx={{
+                                <Button href="recuperar-contrasena" variant="text" sx={{
                                     textAlign: 'center', width: { xs: '100%', lg: '30%', md: '30%' },
                                     '&:hover': {
                                         background: 'none',
