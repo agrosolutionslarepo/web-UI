@@ -1,7 +1,6 @@
 import React from "react";
 import { Button, Container, Grid, Typography, Box, Link } from '@mui/material';
 import banner from "../../assets/img/banner_1.png";
-import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import trigo from "../../assets/img/trigo.png";
 import soja from "../../assets/img/soja.png";
 import maiz from "../../assets/img/maiz.png";
@@ -25,14 +24,11 @@ export const HomePage: React.FC<{}> = () => {
                 display: 'inline-flex'
             }}
             >
-                <Link href="/" sx={{ pb: '5vh' }}>
-                    <PlayArrowIcon sx={{ fontSize: '80px', color: 'white', background: '#61E94B', borderRadius: '45px', padding: '10px', opacity: '0.8' }}></PlayArrowIcon>
-                </Link>
                 <Typography variant="h1" textAlign="center" color="black" sx={{ fontSize: { xs: "30px", lg: "50px" }, fontWeight: '500', pb: '4vh' }}>
                     Unite a la mayor comunidad agricola de la web
                 </Typography>
-                <Button href="/registro" variant="contained" sx={{ fontSize: '17px', pl: '60px', pr: '60px', opacity: '0.8', color: 'white' }}>
-                    ¡Unite!
+                <Button href="/contacto" variant="contained" sx={{ fontSize: '17px', pl: '60px', pr: '60px', opacity: '0.8', color: 'white' }}>
+                    ¡Contactenos!
                 </Button>
             </Box>
 
