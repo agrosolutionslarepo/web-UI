@@ -19,7 +19,7 @@ export const NavBar: React.FC<{}> = () => {
     const [open, setOpen] = useState(false)
 
     return (
-        <Box sx={{ flexGrow: 1,padding: 0 }}>
+        <Box sx={{ flexGrow: 1 }}>
             <AppBar position="fixed" sx={{
                 //backgroundImage: `url(${fondo})`,
                 
@@ -32,7 +32,7 @@ export const NavBar: React.FC<{}> = () => {
                     <Container maxWidth="xl" sx={{ display: { xs: 'none', md: 'flex' }, padding: 0 }}>
                         <Grid container direction="row" justifyContent="space-between" alignItems="center" sx={{ padding: 0 }}>
                             <Grid item >
-                                <Button href="/" sx={{
+                                <Button href="/agrosolutions/" sx={{
                                     '&:hover': {
                                         background: "none",
                                     }
@@ -40,35 +40,35 @@ export const NavBar: React.FC<{}> = () => {
                             </Grid>
                             <Grid item>
 
-                                <Button href="/" sx={{
+                                <Button href="/agrosolutions/" sx={{
                                     color: 'white',
                                     '&:hover': {
                                         background: "none",
                                     }
                                 }} variant="text">Inicio</Button>
 
-                                <Button href="/nosotros" sx={{
+                                <Button href="/agrosolutions/nosotros" sx={{
                                     color: 'white',
                                     '&:hover': {
                                         background: "none",
                                     }
                                 }} variant="text">Nosotros</Button>
 
-                                <Button href="/semillas" sx={{
+                                <Button href="/agrosolutions/semillas" sx={{
                                     color: 'white',
                                     '&:hover': {
                                         background: "none",
                                     }
                                 }} variant="text">Semillas</Button>
 
-                                <Button href="/wiki" sx={{
+                                <Button href="/agrosolutions/wiki" sx={{
                                     color: 'white',
                                     '&:hover': {
                                         background: "none",
                                     }
                                 }} variant="text">Wiki</Button>
 
-                                <Button href="/contacto" sx={{
+                                <Button href="/agrosolutions/contacto" sx={{
                                     color: 'white',
                                     '&:hover': {
                                         background: "none",
@@ -96,7 +96,7 @@ export const NavBar: React.FC<{}> = () => {
                             <Container maxWidth="xl" sx={{ width: 300 }}>
                                 <List>
                                     <ListItem >
-                                        <ListItemButton href="/">
+                                        <ListItemButton href="/agrosolutions/">
                                             <ListItemIcon>
                                                 <HomeIcon />
                                             </ListItemIcon>
@@ -104,7 +104,7 @@ export const NavBar: React.FC<{}> = () => {
                                         </ListItemButton>
                                     </ListItem>
                                     <ListItem >
-                                        <ListItemButton href="/wiki">
+                                        <ListItemButton href="/agrosolutions/wiki">
                                             <ListItemIcon>
                                                 <CollectionsBookmarkIcon />
                                             </ListItemIcon>
@@ -112,7 +112,7 @@ export const NavBar: React.FC<{}> = () => {
                                         </ListItemButton>
                                     </ListItem>
                                     <ListItem >
-                                        <ListItemButton href="/semillas">
+                                        <ListItemButton href="/agrosolutions/semillas">
                                             <ListItemIcon>
                                                 <LocalFloristIcon />
                                             </ListItemIcon>
@@ -120,7 +120,7 @@ export const NavBar: React.FC<{}> = () => {
                                         </ListItemButton>
                                     </ListItem>
                                     <ListItem >
-                                        <ListItemButton href="/nosotros">
+                                        <ListItemButton href="/agrosolutions/nosotros">
                                             <ListItemIcon>
                                                 <PeopleIcon />
                                             </ListItemIcon>
@@ -128,7 +128,7 @@ export const NavBar: React.FC<{}> = () => {
                                         </ListItemButton>
                                     </ListItem>
                                     <ListItem >
-                                        <ListItemButton href="/contacto">
+                                        <ListItemButton href="/agrosolutions/contacto">
                                             <ListItemIcon>
                                                 <ContactSupportIcon />
                                             </ListItemIcon>
