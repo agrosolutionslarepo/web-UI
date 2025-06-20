@@ -23,11 +23,8 @@ export const Join: React.FC<{}> = () => {
                         ¿Queres formar parte de la mayor comunidad de agricultores de Argentina? Estas a solo un click
                     </Typography>
                 </Grid>
-                <Grid item xs={10} lg={4} md={10} sx={{ textAlign: {xs:'left', lg:'center'} }}>
-                    <Button href="/registro" variant="contained" sx={{  opacity: '0.8', color: 'white', width: {xs:'100px', md:'150px',lg:'150px'} }}>
-                        Unite
-                    </Button>
-                    <Button href="/contacto" variant="outlined" sx={{ ml:{xs:'20px', md:'20px', lg:'20px'}, opacity: '0.8', width: {xs:'100px', md:'150px',lg:'150px'} }}>
+                <Grid item xs={10} lg={4} md={10} sx={{ textAlign: {xs:'left', lg:'right'} }}>
+                    <Button href="/agrosolutions/contacto" variant="contained" sx={{  opacity: '0.8', color: 'white', width: {xs:'100px', md:'150px',lg:'150px'} }}>
                         Contactanos
                     </Button>
                 </Grid>

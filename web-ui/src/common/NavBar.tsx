@@ -11,115 +11,92 @@ import AppRegistrationIcon from '@mui/icons-material/AppRegistration';
 import PeopleIcon from '@mui/icons-material/People';
 import ContactSupportIcon from '@mui/icons-material/ContactSupport';
 import LocalFloristIcon from '@mui/icons-material/LocalFlorist';
+import { Padding } from "@mui/icons-material";
 
 //Menu de navegación
 export const NavBar: React.FC<{}> = () => {
 
     const [open, setOpen] = useState(false)
-    const [openLogin, setOpenLogin] = useState(false)
 
     return (
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="fixed" sx={{
-                backgroundImage: `url(${fondo})`,
+                //backgroundImage: `url(${fondo})`,
+                
                 backgroundPosition: 'center',
                 backgroundSize: 'cover',
-                backgroundRepeat: 'no-repeat'
+                backgroundRepeat: 'no-repeat',
+                padding: 0
             }}>
                 <Toolbar>
-                    <Container maxWidth="xl" sx={{ display: { xs: 'none', md: 'flex' } }}>
-                        <Grid container direction="row" justifyContent="space-between" alignItems="center">
+                    <Container maxWidth="xl" sx={{ display: { xs: 'none', md: 'flex' }, padding: 0 }}>
+                        <Grid container direction="row" justifyContent="space-between" alignItems="center" sx={{ padding: 0 }}>
                             <Grid item >
-                                <Button href="/" sx={{
+                                <Button href="/agrosolutions/" sx={{
                                     '&:hover': {
                                         background: "none",
                                     }
-                                }}><img src={logo} width={150} /></Button>
+                                }}><img src={logo} width={100} /></Button>
+                            </Grid>
+                            <Grid item>
 
-                                <Button href="/" sx={{
+                                <Button href="/agrosolutions/" sx={{
                                     color: 'white',
                                     '&:hover': {
                                         background: "none",
                                     }
                                 }} variant="text">Inicio</Button>
 
-                                <Button href="/nosotros" sx={{
+                                <Button href="/agrosolutions/nosotros" sx={{
                                     color: 'white',
                                     '&:hover': {
                                         background: "none",
                                     }
                                 }} variant="text">Nosotros</Button>
 
-                                <Button href="/semillas" sx={{
+                                <Button href="/agrosolutions/semillas" sx={{
                                     color: 'white',
                                     '&:hover': {
                                         background: "none",
                                     }
                                 }} variant="text">Semillas</Button>
 
-                                <Button href="/wiki" sx={{
+                                <Button href="/agrosolutions/wiki" sx={{
                                     color: 'white',
                                     '&:hover': {
                                         background: "none",
                                     }
                                 }} variant="text">Wiki</Button>
 
-                                <Button href="/contacto" sx={{
+                                <Button href="/agrosolutions/contacto" sx={{
                                     color: 'white',
                                     '&:hover': {
                                         background: "none",
                                     }
                                 }} variant="text">Contacto</Button>
                             </Grid>
-                            <Grid item>
-                                <Stack direction="row" spacing={2}>
-                                    <Button sx={{
-                                        color: '#61E94B', backgroundColor: 'white',
-                                        '&:hover': {
-                                            color: '#fff',
-                                            background: '#ffffff6b',
-
-                                        }
-                                    }} variant="contained" href="/login">Ingresar</Button>
-
-                                    <Button href="/registro" sx={{
-                                        color: 'white'
-                                    }} variant="contained">Registrarse</Button>
-                                </Stack>
-                            </Grid>
                         </Grid>
                     </Container>
 
-                    <Container maxWidth="xl" sx={{ display: { xs: 'flex', md: 'none' } }}>
+                    <Container maxWidth="xl" sx={{ display: { xs: 'flex', md: 'none' }, padding: 0 }}>
                         <Grid container direction="row" justifyContent="space-between" alignItems="center">
                             <Grid item >
-                                <Button sx={{ color: 'white' }} onClick={() => setOpen(true)}><MenuIcon /></Button>
+                                <img src={logo} width={100} />
                             </Grid>
                             <Grid item>
-                                <Button sx={{
-                                    color: 'white', background: '#121212',
-                                    boxShadow: '0px 8px 10px -5px rgba(0,0,0,0.2), 0px 16px 24px 2px rgba(0,0,0,0.14), 0px 6px 30px 5px rgba(0,0,0,0.12)',
-                                    backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15))'
-                                }} onClick={() => setOpenLogin(true)}><PersonIcon /></Button>
+                                <Button sx={{ color: 'white', padding: 0}} onClick={() => setOpen(true)} ><MenuIcon sx={{Padding:0, fontSize:'2rem'}}/></Button>
                             </Grid>
                         </Grid>
 
-
                         <Drawer
                             open={open}
-                            anchor="left"
+                            anchor="right"
                             onClose={() => setOpen(false)}
                         >
                             <Container maxWidth="xl" sx={{ width: 300 }}>
                                 <List>
                                     <ListItem >
-                                        <ListItemButton>
-                                            <img src={logo} width={150} />
-                                        </ListItemButton>
-                                    </ListItem>
-                                    <Divider />
-                                    <ListItem >
-                                        <ListItemButton href="/">
+                                        <ListItemButton href="/agrosolutions/">
                                             <ListItemIcon>
                                                 <HomeIcon />
                                             </ListItemIcon>
@@ -127,7 +104,7 @@ export const NavBar: React.FC<{}> = () => {
                                         </ListItemButton>
                                     </ListItem>
                                     <ListItem >
-                                        <ListItemButton href="/wiki">
+                                        <ListItemButton href="/agrosolutions/wiki">
                                             <ListItemIcon>
                                                 <CollectionsBookmarkIcon />
                                             </ListItemIcon>
@@ -135,7 +112,7 @@ export const NavBar: React.FC<{}> = () => {
                                         </ListItemButton>
                                     </ListItem>
                                     <ListItem >
-                                        <ListItemButton href="/semillas">
+                                        <ListItemButton href="/agrosolutions/semillas">
                                             <ListItemIcon>
                                                 <LocalFloristIcon />
                                             </ListItemIcon>
@@ -143,7 +120,7 @@ export const NavBar: React.FC<{}> = () => {
                                         </ListItemButton>
                                     </ListItem>
                                     <ListItem >
-                                        <ListItemButton href="/nosotros">
+                                        <ListItemButton href="/agrosolutions/nosotros">
                                             <ListItemIcon>
                                                 <PeopleIcon />
                                             </ListItemIcon>
@@ -151,43 +128,11 @@ export const NavBar: React.FC<{}> = () => {
                                         </ListItemButton>
                                     </ListItem>
                                     <ListItem >
-                                        <ListItemButton href="/contacto">
+                                        <ListItemButton href="/agrosolutions/contacto">
                                             <ListItemIcon>
                                                 <ContactSupportIcon />
                                             </ListItemIcon>
                                             <ListItemText primary="Contacto" />
-                                        </ListItemButton>
-                                    </ListItem>
-                                </List>
-                            </Container>
-                        </Drawer>
-                        <Drawer
-                            open={openLogin}
-                            anchor="right"
-                            onClose={() => setOpenLogin(false)}
-                        >
-                            <Container maxWidth="xl" sx={{ width: 300 }}>
-                                <List>
-                                    <ListItem >
-                                        <ListItemButton>
-                                            <img src={logo} width={150} />
-                                        </ListItemButton>
-                                    </ListItem>
-                                    <Divider />
-                                    <ListItem >
-                                        <ListItemButton href="/login">
-                                            <ListItemIcon>
-                                                <LoginIcon />
-                                            </ListItemIcon>
-                                            <ListItemText primary="ingresar" />
-                                        </ListItemButton>
-                                    </ListItem>
-                                    <ListItem >
-                                        <ListItemButton href="/registro">
-                                            <ListItemIcon>
-                                                <AppRegistrationIcon />
-                                            </ListItemIcon>
-                                            <ListItemText primary="Registrarse" />
                                         </ListItemButton>
                                     </ListItem>
                                 </List>

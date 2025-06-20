@@ -5,7 +5,7 @@ import { AppRouter } from './Router';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/agrosolutions">
       <AppRouter />
     </BrowserRouter>
   );
