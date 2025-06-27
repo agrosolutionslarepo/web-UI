@@ -42,7 +42,7 @@ export const ContactPage: React.FC<{}> = () => {
         const formData = new FormData(form);
 
         try {
-            const response = await fetch('contact.php', {
+            const response = await fetch('https://nicolasfoster.com/agrosolutions/contact.php', {
                 method: 'POST',
                 body: formData
             });

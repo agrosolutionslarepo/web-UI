@@ -89,16 +89,16 @@ export const Footer: React.FC<{}> = () => {
                 display: 'inline-flex',
             }}>
                 <Grid item xs={10} container direction="row" justifyContent="center" alignItems="center" mt={6}>
-                    <Link href="/agrosolutions/" sx={{ pb: '5vh' }}>
+                    <Link href="/" sx={{ pb: '5vh' }}>
                         <FacebookIcon sx={{ fontSize: {xs:'38px',md:'45px',lg:'45px'}, color: 'white', background: '#173c84', borderRadius: '45px', padding: '10px', opacity: '0.8', mr: '20px' }}></FacebookIcon>
                     </Link>
-                    <Link href="/agrosolutions/" sx={{ pb: '5vh' }}>
+                    <Link href="/" sx={{ pb: '5vh' }}>
                         <InstagramIcon sx={{ fontSize: {xs:'38px',md:'45px',lg:'45px'}, color: 'white', background: '#bb0db8', borderRadius: '45px', padding: '10px', opacity: '0.8', mr: '20px' }}></InstagramIcon>
                     </Link>
-                    <Link href="/agrosolutions/" sx={{ pb: '5vh' }}>
+                    <Link href="/" sx={{ pb: '5vh' }}>
                         <TwitterIcon sx={{ fontSize: {xs:'38px',md:'45px',lg:'45px'}, color: 'white', background: '#009cdb', borderRadius: '45px', padding: '10px', opacity: '0.8', mr: '20px' }}></TwitterIcon>
                     </Link>
-                    <Link href="/agrosolutions/" sx={{ pb: '5vh' }}>
+                    <Link href="/" sx={{ pb: '5vh' }}>
                         <RedditIcon sx={{ fontSize: {xs:'38px',md:'45px',lg:'45px'}, color: 'white', background: '#fb4300', borderRadius: '45px', padding: '10px', opacity: '0.8' }}></RedditIcon>
                     </Link>
                 </Grid>

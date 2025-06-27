@@ -13,9 +13,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $mensaje   = htmlspecialchars(trim($_POST['mensaje'] ?? ''));
 
     if ($nombre && $apellido && $email && $mensaje) {
-        $to      = 'nicolasfoster82@gmail.com'; // TODO: replace with real destination
-        $subject = 'Nuevo mensaje de contacto';
-        $logoUrl = sprintf('https://nicolasfoster.com/agrosolutions/static/media/logo.7a51a12202d91caaae49.png', $_SERVER['HTTP_HOST']);
+        $to      = 'agrosolutionsla@gmail.com';
+        $subject = "Nuevo mensaje de {$nombre} {$apellido}";
+        $logoUrl = sprintf('https://agrosolutions2025.com/static/media/logo.7a51a12202d91caaae49.png', $_SERVER['HTTP_HOST']);
 
         $body = "<html><body style='font-family:Arial,sans-serif;color:#333;'>" .
                 "<div style='text-align:center;margin-bottom:20px'>" .
