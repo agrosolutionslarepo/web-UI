@@ -27,7 +27,7 @@ export const HomePage: React.FC<{}> = () => {
                 <Typography variant="h1" textAlign="center" color="black" sx={{ fontSize: { xs: "30px", lg: "50px" }, fontWeight: '500', pb: '4vh' }}>
                     Unite a la mayor comunidad agricola de la web
                 </Typography>
-                <Button href="/agrosolutions/contacto" variant="contained" sx={{ fontSize: '17px', pl: '60px', pr: '60px', opacity: '0.8', color: 'white' }}>
+                <Button href="/contacto" variant="contained" sx={{ fontSize: '17px', pl: '60px', pr: '60px', opacity: '0.8', color: 'white' }}>
                     ¡Contactenos!
                 </Button>
             </Box>
@@ -69,7 +69,7 @@ export const HomePage: React.FC<{}> = () => {
                             el surgimiento de la agricultura revolucionó la historia,
                             transformando el modo de vida y la supervivencia humana por completo.
                         </Typography>
-                        <Button variant="outlined" href="/agrosolutions/wiki">
+                        <Button variant="outlined" href="/wiki">
                             +info
                         </Button>
                     </Grid>
@@ -85,7 +85,7 @@ export const HomePage: React.FC<{}> = () => {
                             más rápido son las de la familia de la col: brócoli, lechuga y coliflor.
                             El árbol que crece más rápido es el plátano.
                         </Typography>
-                        <Button variant="outlined" href="/agrosolutions/wiki">
+                        <Button variant="outlined" href="/wiki">
                             +info
                         </Button>
                     </Grid>
@@ -110,7 +110,7 @@ export const HomePage: React.FC<{}> = () => {
                             cultivar en pequeños huertos, separadas por unos 30 centímetros de
                             distancia entre sí, o esparciendo las semillas en maceteros.
                         </Typography>
-                        <Button variant="outlined" href="/agrosolutions/wiki">
+                        <Button variant="outlined" href="/wiki">
                             +info
                         </Button>
                     </Grid>
@@ -126,7 +126,7 @@ export const HomePage: React.FC<{}> = () => {
                             para saber si en la tierra hay suficiente materia orgánica es sencilla. Entre
                             más materia orgánica, esta adquirirá un color más oscuro.
                         </Typography>
-                        <Button variant="outlined" href="/agrosolutions/wiki">
+                        <Button variant="outlined" href="/wiki">
                             +info
                         </Button>
                     </Grid>

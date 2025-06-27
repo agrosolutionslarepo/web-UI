@@ -3,9 +3,15 @@ import './App.css';
 import { BrowserRouter } from "react-router-dom";
 import { AppRouter } from './Router';
 
+const redirect = sessionStorage.redirect;
+if (redirect) {
+  sessionStorage.removeItem("redirect");
+  window.history.replaceState(null, "", redirect);
+}
+
 function App() {
   return (
-    <BrowserRouter basename="/agrosolutions">
+    <BrowserRouter>
       <AppRouter />
     </BrowserRouter>
   );
